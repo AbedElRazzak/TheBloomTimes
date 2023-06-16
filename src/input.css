@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .h1 {
+        @apply font-lora text-h1 font-bold tracking-[-2px]
+    }
+
+    .h2 {
+        @apply font-lora text-h2 font-bold tracking-[-2.7px]
+    }
+
+    .h3 {
+        @apply font-lora text-h3 font-bold tracking-[-1px]
+    }
+
+    .h4 {
+        @apply font-lora text-h4 font-bold tracking-[-2px]
+    }
+
+    .h5 {
+        @apply font-lora text-h5 tracking-[-1px]
+    }
+
+    .h6 {
+        @apply font-lora text-h6 font-bold tracking-[-0.65px] leading-[32px]
+    }
+
+    .p1 {
+        @apply text-p1 font-lora tracking-[-1px] leading-[32px]
+    }
+
+    .p2 {
+        @apply text-p2 font-lora leading-[24px]
+    }
+
+    .p3 {
+        @apply text-p3 font-lora leading-[16px] tracking-[-0.1px]
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+
+}
