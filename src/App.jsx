@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path='/' element={<Homepage />}></Route>
+        <Route exact path='/TheBloomTimes' element={<Homepage />}></Route>
       </Routes>
     </Router>
   )
