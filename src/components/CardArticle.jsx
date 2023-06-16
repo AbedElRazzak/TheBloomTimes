@@ -5,17 +5,6 @@ import React from "react"
 export default function CardArticle(props) {
 
 
-    function decodeURL(url) {
-        console.log(url)
-        // Replace any occurrences of "\/" with "/"
-        const decodedURL = url.replace(/\\\//g, "/");
-        
-        // Decode the URL
-        const functionalURL = decodeURIComponent(decodedURL);
-        console.log(functionalURL)
-        
-        return functionalURL;
-      }
 
     return (
         // <>
