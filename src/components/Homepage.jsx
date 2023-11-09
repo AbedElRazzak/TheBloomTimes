@@ -21,7 +21,7 @@ export default function Homepage() {
 
   async function getArticleDataHandler(catg) {
     try {
-      const response = await axios.get('https://laravel-backend-production-e601.up.railway.app/api/bloomberg/' + `${catg}`);
+      const response = await axios.get('https://laravel-backend-c2lyij8ns-abedelrazzak.vercel.app/api/bloomberg/' + `${catg}`);
       console.log(response.data)
       setArticleData([... response.data])
       
@@ -32,7 +32,7 @@ export default function Homepage() {
 
   async function getCurrencyPricesHandler() {
     try {
-      const response = await axios.get('https://laravel-backend-production-e601.up.railway.app/api/bloombergcurrencyprices');
+      const response = await axios.get('https://laravel-backend-c2lyij8ns-abedelrazzak.vercel.app/api/bloombergcurrencyprices');
       console.log(response.data)
       setCurrencyPricesData(response.data)
     
@@ -43,7 +43,7 @@ export default function Homepage() {
 
   async function fetchGPT() {
 
-      axios.post('https://laravel-backend-production-e601.up.railway.app/api/chatgptcomplete/' + `${prompt}`).then(
+      axios.post('https://laravel-backend-c2lyij8ns-abedelrazzak.vercel.app/api/chatgptcomplete/' + `${prompt}`).then(
         response => {
           console.log(response)
           setGptResponse(response.data.choices[0].message.content)
